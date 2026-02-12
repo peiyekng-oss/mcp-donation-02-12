@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Listing - WeCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <site-header></site-header>
+
+    <main>
+        <div class="form-container">
+            <h1>Create a New Donation Listing</h1>
+            <form>
+                <div class="form-group">
+                    <label for="item-type">Item Type</label>
+                    <input type="text" id="item-type" name="item-type" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="surplus-date">Surplus Date</label>
+                    <input type="date" id="surplus-date" name="surplus-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo-upload">Upload Photo</label>
+                    <input type="file" id="photo-upload" name="photo-upload">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="pickup-window">Pickup Window</label>
+                    <input type="text" id="pickup-window" name="pickup-window" placeholder="e.g., Weekdays 9am-5pm">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Listing</button>
+            </form>
+        </div>
+    </main>
+
+    <site-footer></site-footer>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - WeGive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <site-header></site-header>
+
+    <main>
+        <div class="form-container">
+            <h1>Join WeGive</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Company/Organization Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-type">I am a...</label>
+                    <select id="user-type" name="user-type">
+                        <option value="donor">Donor</option>
+                        <option value="ngo">NGO</option>
+                        <option value="volunteer">Volunteer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 WeGive. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const userType = urlParams.get('type');
+            if (userType) {
+                const userTypeSelect = document.getElementById('user-type');
+                if (userTypeSelect) {
+                    userTypeSelect.value = userType;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

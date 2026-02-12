@@ -1,14 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCare - Turn Surplus into Social Impact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <site-header></site-header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Turn Surplus into Social Impact</h1>
+                <p>WeCare is a platform that bridges the gap between corporate donors with surplus goods and the NGOs that can distribute them to communities in need.</p>
+                <div class="hero-buttons">
+                    <a href="register.html?type=donor" class="btn btn-primary">For Donors</a>
+                    <a href="register.html?type=ngo" class="btn btn-secondary">For NGOs</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <img src="https://api.iconify.design/heroicons-outline/clipboard-list.svg?color=%231A4D2E" alt="List Surplus Icon">
+                    <h3>1. List Surplus</h3>
+                    <p>Donors easily list their surplus goods, providing details and photos.</p>
+                </div>
+                <div class="step">
+                    <img src="https://api.iconify.design/mdi/handshake-outline.svg?color=%231A4D2E" alt="Get Matched Icon">
+                    <h3>2. Get Matched</h3>
+                    <p>Our platform intelligently matches listings with the needs of registered NGOs.</p>
+                </div>
+                <div class="step">
+                    <img src="https://api.iconify.design/heroicons-outline/truck.svg?color=%231A4D2E" alt="Coordinate Pickup Icon">
+                    <h3>3. Coordinate Pickup</h3>
+                    <p>Donors and NGOs coordinate pickup and delivery through our secure messaging system.</p>
+                </div>
+                <div class="step">
+                    <img src="https://api.iconify.design/heroicons-outline/chart-bar.svg?color=%231A4D2E" alt="Track Impact Icon">
+                    <h3>4. Track Impact</h3>
+                    <p>Donors receive detailed reports on the impact of their contributions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 WeCare. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js" type="module"></script>
 </body>
 </html>

@@ -70,7 +70,7 @@ class SiteHeader extends HTMLElement {
             </header>
         `;
         const image = shadow.querySelector('.logo-image');
-        image.src = 'brand-logo.png';
+        image.src = 'assets/brand-logo.png';
     }
 }
 
